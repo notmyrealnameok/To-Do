@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/23f2ac22bb.js" crossorigin="anonymous"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="text">
+        <span><h1>Start Your Day Off Right</h1></span>
+    </div>
+    
+    <div class="container-wrapper">
+        <!-- To-Do List Container -->
+        <div class="container">
+            <h1>To-do List</h1>
+            <div class="inputfield">
+                <input type="text" placeholder="e.g submit LU3 Post Activity">
+                <button><span><i class="fas fa-plus" style="color: #000000;"></i></span></button>
+            </div>
+            <ul class="list"></ul>
+            <div class="footer">
+                <span>You Have <span class="pendingNum"></span> Pending Tasks</span>
+                <button class="clear-all">Clear All</button>
+            </div>
+        </div>
+
+        <!-- Completed Tasks Container -->
+        <div class="completed-container">
+            <h1>Completed Tasks</h1>
+            <ul class="completed-list"></ul>
+            <div class="footer">
+                <span>You have completed <span class="completedNum"></span> tasks</span>
+                <button class="clear-completed">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
